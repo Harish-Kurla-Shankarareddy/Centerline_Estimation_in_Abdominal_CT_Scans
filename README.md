@@ -5,10 +5,17 @@ In order to create computer-aided diagnosis systems using computed tomography (C
 
 
 Centerline Estimation:
-Skeletonization process is performed on segmented colon image using “skimage.morphology.skeletonize3d()”  that returns a thinned image with branch like structures shown in Figure 2a.
-The skeletonized image is converted into a graph with nodes and edges, where the end of each branch is represented as a node (black points). The centerlines between two consecutive nodes are plotted with different colours. 
-A graph search is performed to find all the possible paths in the graph. The longest path is then selected thus eliminating undesired branches, as seen in Figure 2b.
-Further path smoothing techniques Savitzky-Golay Filter and Piecewise Cubic Hermite Interpolator are used in order to obtain a smooth and continuous centerline as seen in Figure 2c.
+
+
+1) Skeletonization process is performed on segmented colon image using “skimage.morphology.skeletonize3d()”  that returns a thinned image with branch like structures shown in Figure 2a.
+
+2) The skeletonized image is converted into a graph with nodes and edges, where the end of each branch is represented as a node (black points). The centerlines between two consecutive nodes are plotted with different colours.
+
+3) A graph search is performed to find all the possible paths in the graph. The longest path is then selected thus eliminating undesired branches, as seen in Figure 2b.
+
+4) Further path smoothing techniques Savitzky-Golay Filter and Piecewise Cubic Hermite Interpolator are used in order to obtain a smooth and continuous centerline as seen in Figure 2c.
+
+   
 ![image](https://github.com/Harish-Kurla-Shankarareddy/Centerline_Estimation_in_Abdominal_CT_Scans/assets/75476784/dc27d168-4847-4938-b56c-13192995b6d3)
 ![Figure](https://github.com/Harish-Kurla-Shankarareddy/Centerline_Estimation_in_Abdominal_CT_Scans/assets/75476784/6bc09cd0-c197-48d6-82ee-ef970c8f7fec)
 
