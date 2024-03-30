@@ -11,6 +11,6 @@ A graph search is performed to find all the possible paths in the graph. The lon
 Further path smoothing techniques Savitzky-Golay Filter and Piecewise Cubic Hermite Interpolator are used in order to obtain a smooth and continuous centerline as seen in Figure 2c.
 ![image](https://github.com/Harish-Kurla-Shankarareddy/Centerline_Estimation_in_Abdominal_CT_Scans/assets/75476784/dc27d168-4847-4938-b56c-13192995b6d3)
 
-![image](https://github.com/Harish-Kurla-Shankarareddy/Centerline_Estimation_in_Abdominal_CT_Scans/assets/75476784/9b58cf1b-6709-4697-bc05-753ae8217bc8)
+
 
 
